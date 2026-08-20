@@ -1,6 +1,6 @@
-# 🛡️ Machine Learning Security & Defense Platform
+# 🛡️ Machine Learning Security & Defense Hub
 
-An interactive web-based platform and academic notebook demonstration covering **Decision-Time Evasion Attacks** and **Training-Time Data Poisoning Attacks** along with layered **Defense & Detection Mechanisms** on the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
+An interactive web-based platform demonstrating **Decision-Time Evasion Attacks** and **Training-Time Data Poisoning Attacks** along with layered **Defense & Detection Mechanisms** on the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
 
 ---
 
@@ -61,27 +61,37 @@ When the lab is deployed, any visitor can explore and run live security simulati
 2. Log in to [Netlify](https://app.netlify.com/) and click **Add new site** ➔ **Import an existing project**.
 3. Select **GitHub** and pick your repository.
 4. Configure Build Settings:
-   - **Base Directory**: `ml-attack-defense-demo` (if building from root repo) or leave default if repo root is the app.
    - **Build Command**: `npm run build`
-   - **Publish Directory**: `dist` (or `ml-attack-defense-demo/dist`)
+   - **Publish Directory**: `dist`
 5. Click **Deploy Site**. Netlify will automatically build and deploy your live URL.
 
 ### Option B: Direct CLI Deployment (Command Line)
-Run the following commands inside `ml-attack-defense-demo`:
+Run the following commands inside the project folder:
 ```bash
-# 1. Navigate to web app folder
-cd ml-attack-defense-demo
+# 1. Install Netlify CLI globally (if not already installed)
+npm install -g netlify-cli
 
 # 2. Build the production bundle
 npm run build
 
 # 3. Deploy to Netlify
-npx netlify-cli deploy --prod --dir=dist
+netlify deploy --prod --dir=dist
 ```
 
 ---
 
-## 💻 Repository & Technology Stack
+## 🛠️ Local Development Setup
 
-- **Frontend Web Platform**: React 18, Vite, Recharts, Lucide Icons, Vanilla CSS
-- **Notebook & ML Core**: Python 3.10, PyTorch, Scikit-learn, Pandas, NumPy, Seaborn
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd ml-attack-defense-demo
+
+# Install dependencies
+npm install
+
+# Run dev server locally
+npm run dev
+```
+
+Open `http://localhost:5173/` in your browser.
