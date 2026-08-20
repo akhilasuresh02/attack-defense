@@ -54,32 +54,6 @@ When the lab is deployed, any visitor can explore and run live security simulati
 
 ---
 
-## 🌐 Deploying to Netlify (Step-by-Step Guide)
-
-### Option A: Deploy via Netlify Web UI (GitHub Integration)
-1. Push this project repository to **GitHub**.
-2. Log in to [Netlify](https://app.netlify.com/) and click **Add new site** ➔ **Import an existing project**.
-3. Select **GitHub** and pick your repository.
-4. Configure Build Settings:
-   - **Base Directory**: `ml-attack-defense-demo` (if building from root repo) or leave default if repo root is the app.
-   - **Build Command**: `npm run build`
-   - **Publish Directory**: `dist` (or `ml-attack-defense-demo/dist`)
-5. Click **Deploy Site**. Netlify will automatically build and deploy your live URL.
-
-### Option B: Direct CLI Deployment (Command Line)
-Run the following commands inside `ml-attack-defense-demo`:
-```bash
-# 1. Navigate to web app folder
-cd ml-attack-defense-demo
-
-# 2. Build the production bundle
-npm run build
-
-# 3. Deploy to Netlify
-npx netlify-cli deploy --prod --dir=dist
-```
-
----
 
 ## 💻 Repository & Technology Stack
 
