@@ -1,6 +1,6 @@
 # Decision-Time Evasion and Data Poisoning: Attack and Defense
 
-A classroom demonstration of machine-learning security using the **Breast Cancer Wisconsin (Diagnostic) dataset**. The project demonstrates decision-time evasion attacks, data-poisoning attacks, probability-based decisions, clustering-based detection, and layered defense strategies.
+Demonstration of machine-learning security using the **Breast Cancer Wisconsin (Diagnostic) dataset**. The project demonstrates decision-time evasion attacks, data-poisoning attacks, probability-based decisions, clustering-based detection, and layered defense strategies.
 
 ## 1. Project Objective
 
